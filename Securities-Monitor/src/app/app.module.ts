@@ -6,6 +6,16 @@ import { AppComponent } from './app.component';
 
 import { NgApexchartsModule } from "ng-apexcharts";
 
+import {HttpClientModule} from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
+
+import { MatSelectModule } from '@angular/material/select';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
 @NgModule({
   declarations: [
     AppComponent
@@ -13,7 +23,14 @@ import { NgApexchartsModule } from "ng-apexcharts";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgApexchartsModule
+    NgApexchartsModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
